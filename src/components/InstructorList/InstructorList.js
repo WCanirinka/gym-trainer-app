@@ -10,9 +10,9 @@ const InstructorsList = props => {
     <div>
       <h1 className="mt-3">Check our Gym Instructors</h1>
       <div className={styles.instructor_list}>
-        {instructors && instructors.map(inst => (
+        {instructors ? instructors.map(inst => (
           <Instructor key={inst.id} instructor={inst} />
-        ))}
+        )) : null}
       </div>
     </div>
   );
