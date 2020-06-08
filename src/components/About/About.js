@@ -2,22 +2,23 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
+import '@material-ui/core';
 import styles from './About.module.css';
 
 const About = () => (
-  <div>
-    <h1 className={styles.mt_5}>About</h1>
+  <div className={styles.container}>
+    <h1 m={5}>About</h1>
     <p className="about-text">
       This is a project to demonstrate mastery as a Final Project for
       Microverse&apos;s full-stack program.
     </p>
     <p className="about-text">
-      To know more about this page, consider visiting and starring its repository:
-      <a href="https://github.com/WCanirinka/gym-trainer-app" target="_blank"> https://github.com/phalado/final-capstone</a>
+      To know more about this page, consider visiting and starring its repository
+      <a href="https://github.com/WCanirinka/gym-trainer-app" target="_blank"> here</a>
     </p>
     <p className="about-text">
-      The API used for this project is also part of the project and can be seen in the repository:
-      <a href="https://github.com/phalado/final-capstone-api" target="_blank"> https://github.com/phalado/final-capstone-api</a>
+      The API used for this project is also part of the project and can be seen in the repository
+      <a href="https://github.com/WCanirinka/trainers-api" target="_blank"> here</a>
     </p>
     <p className="about-text">Fell free to visit my social medias and send me a hello clicking on the icons below.</p>
     <div className="about-icon-container">

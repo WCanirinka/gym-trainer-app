@@ -1,0 +1,52 @@
+.home_title {
+  margin: 2rem;
+  font-weight: bold;
+}
+
+.gym_image {
+  width: 80%;
+}
+
+.inst_button_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.home_btn {
+  position: relative;
+  border: none;
+  background: none;
+}
+
+.btn_name {
+  position: absolute;
+  color: black;
+  bottom: 0;
+  font-size: 3rem;
+  background-color: rgba(256,256,256,0.5);
+  left: 1.5rem;
+  padding: 0 1rem;
+  border-radius: 10px;
+}
+
+.home_inst_btn {
+  width: 60%;
+}
+
+.home_login_btn {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.home_img {
+  width: 100%;
+}
+
+.error-page {
+  margin: 2rem;
+  display: flex;
+  flex-flow: column;
+}

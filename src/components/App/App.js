@@ -6,20 +6,19 @@ import {
 } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
-import Header from '../containers/Header';
-import Navbar from '../containers/Navbar';
-import Home from './Home';
-import InstructorsList from './InstructorsList';
-import InstructorFile from '../containers/InstructorFile';
-import InstructorsSchedule from '../containers/InstructorsSchedule';
-import UserSchedule from '../containers/UserSchedule';
-import UserAccount from './UserAccount';
-import HowToSchedule from './HowToScheule';
-import Login from '../containers/Login';
-import Signup from './Signup';
+import Header from '../../containers/Header';
+import Navbar from '../../containers/NavBar';
+import Home from '../Home/Home';
+import InstructorList from '../InstructorList/InstructorList';
+import InstructorFile from '../../containers/InstructorFile';
+import InstructorSchedule from '../../containers/InstructorSchedule';
+import UserSchedule from '../../containers/UserSchedule';
+import UserAccount from '../UserAccount/UserAccount';
+import Login from '../../containers/Login';
+import Signup from '../Signup/Signup';
 import About from '../About/About';
-// import NoMatchPage from './NoMatchPage';
-import './styles/App.css';
+import NoMatch from '../NoMatch/NoMatch';
+import styles from './App.module.css';
 
 toast.configure();
 
@@ -30,11 +29,11 @@ const App = props => {
 
   return (
     <Router>
-      <div className="App">
+      <div className={styles.App}>
         <Header />
-        <div className="body">
+        <div className={styles.body}>
           <Navbar />
-          <div className="main">
+          <div className={styles.main}>
             <Switch>
               <Route exact path="/">
                 <Home instructors={instructors} user={user} />
@@ -46,13 +45,13 @@ const App = props => {
                 <Signup user={user} />
               </Route>
               <Route path="/instructors">
-                <InstructorsList instructors={instructors} />
+                <InstructorList instructors={instructors} />
               </Route>
               <Route path="/instFile/:id">
                 <InstructorFile />
               </Route>
               <Route path="/instSchedule/:id">
-                <InstructorsSchedule />
+                <InstructorSchedule />
               </Route>
               <Route path="/userSchedule">
                 <UserSchedule />
@@ -63,10 +62,7 @@ const App = props => {
               <Route path="/about">
                 <About />
               </Route>
-              <Route path="/how-to-schedule">
-                <HowToSchedule />
-              </Route>
-              {/* <Route component={NoMatchPage} /> */}
+              <Route component={NoMatch} />
             </Switch>
           </div>
         </div>
