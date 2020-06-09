@@ -84,7 +84,7 @@ To create this project I used:
 
 ## Contact
 
-Author: Raphael Cordeiro
+Author: Wilfried Canirinka
 
 Follow me on [Twitter][wil-twitter],  visit my [Github portfolio][wil-github], my [Linkedin][wil-linkedin].
 
@@ -99,7 +99,7 @@ I have no business rights about the characters used in this API. This is only fo
 <!-- Links -->
 [assignment]: https://www.notion.so/Final-Capstone-Project-Book-an-Appointment-41ded2ee99ff4fe4becf91acb332ca26
 [live-version]: https://gym-trainer-app.netlify.app/
-[back-end]: https://github.com/phalado/final-capstone-api/
+[back-end]: https://github.com/WCanirinka/trainers-api
 [mcvs]: https://www.microverse.org/
 [wil-github]: https://github.com/WCanirinka
 [wil-twitter]: https://twitter.com/WCanirinka
