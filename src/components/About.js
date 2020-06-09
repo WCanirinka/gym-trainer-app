@@ -2,11 +2,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
-import styles from './styles/About.module.css';
+import './styles/About.css';
 
 const About = () => (
-  <div className={styles.container}>
-    <h1 classnames="m-5">About</h1>
+  <div className="container">
+    <h1 className="mt-5">About</h1>
     <p className="about-text">
       This is a project to demonstrate mastery as a Final Project for
       Microverse&apos;s full-stack program.

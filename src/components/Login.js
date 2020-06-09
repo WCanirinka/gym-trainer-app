@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { ToastContainer, toast } from 'react-toastify';
 import { userLogin } from '../services/user';
 import 'react-toastify/dist/ReactToastify.css';
-import styles from './styles/Login.module.css';
+import './styles/Login.css';
 
 const Login = props => {
   const {
@@ -62,7 +62,7 @@ const Login = props => {
   };
 
   return (
-    <div className={styles.login}>
+    <div className="login">
       {user.logged ? <Redirect to="/" /> : null}
       <h1 id="login-message">Login</h1>
       <form onSubmit={handleSubmit} className="login-form">

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { CreateUserRows, getDay } from '../helpers/CalendarHelper';
 import { deleteClass } from '../services/classes';
-import './styles/InstructorSchedule.module.css';
+import './styles/InstructorSchedule.css';
 
 const UserSchedule = props => {
   const {
@@ -49,13 +49,13 @@ const UserSchedule = props => {
     <div>
       <h1 className="table-title">{`${user.name.split(' ')[0]}'s schedule`}</h1>
       <div className="table-container">
-        <Link to="/userSchedule" className="next-prev width-bigger-900">
+        <Link to="/userSchedule" className="next-prev width_bigger">
           <button
             type="button"
             className="home-buttons home-signup-button"
             onClick={() => chngWeek(-1)}
           >
-            <img src="/contents/prev.png" alt="Signup" className="table-liks-images" />
+            <img src="/content/previous.png" alt="Signup" className="table-link-images" />
             <p>Previous Week</p>
           </button>
         </Link>
@@ -70,13 +70,13 @@ const UserSchedule = props => {
           </tbody>
         </table>
         <div>
-          <Link to="/userSchedule" className="next-prev width-smaller-900">
+          <Link to="/userSchedule" className="next-prev width_small">
             <button
               type="button"
               className="home-buttons home-signup-button"
               onClick={() => chngWeek(-1)}
             >
-              <img src="/contents/prev.png" alt="Signup" className="table-link-images" />
+              <img src="/content/previous.png" alt="Signup" className="table-link-images" />
               <p>Previous Week</p>
             </button>
           </Link>
@@ -86,7 +86,7 @@ const UserSchedule = props => {
               className="home-buttons home-signup-button"
               onClick={() => chngWeek(1)}
             >
-              <img src="/contents/next.png" alt="Signup" className="table-link-images" />
+              <img src="/content/next.png" alt="Signup" className="table-link-images" />
               <p>Next Week</p>
             </button>
           </Link>

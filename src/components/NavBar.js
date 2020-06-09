@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { getInstructors } from '../services/instructor';
 import { getClasses } from '../services/classes';
 import { getSignedUsers } from '../services/user';
-import './styles/NavBar.module.css';
+import './styles/NavBar.css';
 
 const NavBar = props => {
   const {
@@ -88,9 +88,9 @@ const NavBar = props => {
   }, []);
 
   return (
-    <nav className="navbar-container">
-      <Link to="/" className="navbar-link">Home</Link>
-      <Link to="/instructors" className="navbar-link">Instructors</Link>
+    <nav className="navbar-container navbar-full navbar-light bg-light">
+      <Link to="/" className="navbar-brand">Home</Link>
+      <Link to="/instructors" className="navbar-brand">Instructors</Link>
       <ul>
         {instructors.map(inst => (
           <Link to={`/instFile/${inst.id}`} key={inst.id} className="navbar_inst">
@@ -98,8 +98,8 @@ const NavBar = props => {
           </Link>
         ))}
       </ul>
-      <Link to="/userSchedule" className="navbar-link">Your schedule</Link>
-      <Link to="/about" className="navbar-link">About us</Link>
+      <Link to="/userSchedule" className="navbar-brand">Your schedule</Link>
+      <Link to="/about" className="navbar-brand">About</Link>
     </nav>
   );
 };

@@ -3,11 +3,10 @@ import moment from 'moment';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import cx from 'classnames';
 import getSingleInst from '../helpers/InstructorHelper';
 import { CreateRows, getDay } from '../helpers/CalendarHelper';
 import { createClass, deleteClass } from '../services/classes';
-import styles from './styles/InstructorSchedule.module.css';
+import './styles/InstructorSchedule.css';
 
 const InstructorsSchedule = props => {
   const {
@@ -62,22 +61,22 @@ const InstructorsSchedule = props => {
     return (
       <div>
         <h1 className="my-5">Fetching data. Please wait.</h1>
-        <img src="/content/loading.gif" alt="Fetching" className={styles.fetch_gif} />
+        <img src="/content/loading.gif" alt="Fetching" className="fetch_gif" />
       </div>
     );
   }
 
   return (
     <div>
-      <h1 className={styles.cal_title}>{`${instructor.name.split(' ')[0]}'s schedule`}</h1>
-      <div className={styles.cal_container}>
-        <Link to={`/instSchedule/${instructor.id}`} className={cx(styles.next_prev, styles.width_big)}>
+      <h1 className="cal_title">{`${instructor.name.split(' ')[0]}'s schedule`}</h1>
+      <div className="cal_container">
+        <Link to={`/instSchedule/${instructor.id}`} className="next_prev width_big">
           <button
             type="button"
             className="home-buttons home-signup-button table-links-buttons"
             onClick={() => chngWeek(-1)}
           >
-            <img src="/contents/previous.png" alt="Signup" className="table-liks-images" />
+            <img src="/contents/previous.png" alt="Signup" className="table-link-images" />
             <p>Previous Week</p>
           </button>
         </Link>
@@ -92,7 +91,7 @@ const InstructorsSchedule = props => {
           </tbody>
         </table>
         <div>
-          <Link to={`/instSchedule/${instructor.id}`} className={cx(styles.next_prev, styles.width_small)}>
+          <Link to={`/instSchedule/${instructor.id}`} className="next_prev width_small">
             <button
               type="button"
               className="home_btn home_signup_btn table-link-buttons"

@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import styles from './styles/Instructor.module.css';
+import './styles/Instructor.css';
 
 const Instructor = props => {
   const { instructor } = props;
   const { id, name, instImage } = instructor;
 
   return (
-    <div className={styles.inst_container}>
+    <div className="inst_container">
       <h2>{name.split(' ')[0]}</h2>
       <Link to={`/instFile/${id}`}>
         <button
-          className={styles.inst_btn}
+          className="inst_btn"
           type="button"
         >
-          <img src={instImage} alt={name} className={styles.inst_img} />
+          <img src={instImage} alt={name} className="inst_img" />
         </button>
       </Link>
     </div>

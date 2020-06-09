@@ -3,9 +3,19 @@
   font-weight: bold;
 }
 
-.gym_image {
-  width: 80%;
-  height: 30%;
+.home_title_text {
+  font-size: larger;
+}
+
+/* .gym_img {
+  width: 100%;
+  height: 20%;
+} */
+
+.img_container {
+  width: 2700px;
+  height: 500px;
+  margin-left: -600px;
 }
 
 .inst_button_container {

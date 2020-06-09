@@ -18,7 +18,7 @@ import Login from '../containers/Login';
 import Signup from './Signup';
 import About from './About';
 import NoMatch from './NoMatch';
-import styles from './styles/App.module.css';
+import './styles/App.css';
 
 toast.configure();
 
@@ -29,11 +29,11 @@ const App = props => {
 
   return (
     <Router>
-      <div className={styles.App}>
+      <div className="App">
         <Header />
-        <div className={styles.body}>
+        <div className="body">
           <Navbar />
-          <div className={styles.main}>
+          <div className="main">
             <Switch>
               <Route exact path="/">
                 <Home instructors={instructors} user={user} />
