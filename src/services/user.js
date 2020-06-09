@@ -1,11 +1,13 @@
 import axios from 'axios';
 
+const call = 'https://trainers-appointment-api.herokuapp.com';
+
 const createUser = async props => {
   const {
     name, email, pass, conf,
   } = props;
 
-  const url = 'https://trainers-appointment-api.herokuapp.com/users/';
+  const url = `${call}/users/`;
   const params = `name=${name}&email=${email}&password=${pass}&password_confirmation=${conf}`;
 
   const response = await axios.post(`${url}?${params}`);
@@ -17,7 +19,7 @@ const updateUser = async props => {
     id, userName, userEmail, pass, conf,
   } = props;
 
-  const url = `https://trainers-appointment-api.herokuapp.com/users/${id}`;
+  const url = `${call}/users/${id}`;
   const params = pass ? `name=${userName}&email=${userEmail}&password=${pass}&password_confirmation=${conf}`
     : `name=${userName}&email=${userEmail}`;
 
@@ -27,7 +29,7 @@ const updateUser = async props => {
 
 const userLogin = async props => {
   const { email, pass } = props;
-  const url = 'https://trainers-appointment-api.herokuapp.com/login/';
+  const url = `${call}/login`;
   const params = `email=${email}&password=${pass}`;
 
   const response = await axios.get(`${url}?${params}`);
@@ -36,7 +38,7 @@ const userLogin = async props => {
 
 const getUser = async props => {
   const { id } = props;
-  const url = 'https://trainers-appointment-api.herokuapp.com/users/';
+  const url = `${call}/users/`;
   const params = `user_id=${id}`;
 
   const response = await axios.get(`${url}?${params}`);
@@ -44,7 +46,7 @@ const getUser = async props => {
 };
 
 const getSignedUsers = async () => {
-  const url = 'https://trainers-appointment-api.herokuapp.com/users/';
+  const url = `${call}/users/`;
 
   const response = await axios.get(`${url}`);
   return response.data;

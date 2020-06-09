@@ -72,12 +72,16 @@ const App = props => {
 };
 
 App.propTypes = {
-  instructors: PropTypes.arrayOf(PropTypes.object).isRequired,
+  instructors: PropTypes.arrayOf(PropTypes.object),
   user: PropTypes.shape({
     id: PropTypes.number,
     logged: PropTypes.bool,
   }).isRequired,
   editUser: PropTypes.func.isRequired,
+};
+
+App.defaultProps = {
+  instructors: [],
 };
 
 export default App;

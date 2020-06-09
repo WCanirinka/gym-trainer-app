@@ -19,9 +19,9 @@ if (localUser === null || !localUser.remember) {
       name: '',
       email: '',
     },
-    instructors: [],
+    instructor: [],
     classes: [],
-    signedUsers: [],
+    registeredUsers: [],
     week: 0,
   };
 } else if (localUser.remember) {
@@ -32,9 +32,9 @@ if (localUser === null || !localUser.remember) {
       name: localUser.name,
       email: localUser.email,
     },
-    instructors: [],
+    instructor: [],
     classes: [],
-    signedUsers: [],
+    registeredUsers: [],
     week: 0,
   };
 }

@@ -11,7 +11,7 @@ import styles from './InstructorSchedule.module.css';
 
 const InstructorsSchedule = props => {
   const {
-    user, instructors, classes, signedUsers, week, addClassy, removeClassy, chngWeek,
+    user, instructors, classes, registeredUsers, week, addClassy, removeClassy, chngWeek,
   } = props;
   const instructor = getSingleInst(instructors, 'instSchedule');
   const headFormat = 'dddd - MMMM Do';
@@ -51,7 +51,7 @@ const InstructorsSchedule = props => {
         week={week}
         clickHandler={handleClick}
         classes={classes.filter(classy => classy.instructor === instructor.id)}
-        signedUsers={signedUsers}
+        registeredUsers={registeredUsers}
         key={moment().format(`${rowFormat}${j}:00`)}
       />);
     }
@@ -62,7 +62,7 @@ const InstructorsSchedule = props => {
     return (
       <div>
         <h1 className="my-5">Fetching data. Please wait.</h1>
-        <img src="/contents/loading.gif" alt="Fetching" className={styles.fetch_gif} />
+        <img src="/content/loading.gif" alt="Fetching" className={styles.fetch_gif} />
       </div>
     );
   }
@@ -125,11 +125,15 @@ InstructorsSchedule.propTypes = {
     logged: PropTypes.bool,
   }).isRequired,
   classes: PropTypes.arrayOf(PropTypes.object).isRequired,
-  signedUsers: PropTypes.arrayOf(PropTypes.object).isRequired,
+  registeredUsers: PropTypes.arrayOf(PropTypes.object),
   week: PropTypes.number.isRequired,
   addClassy: PropTypes.func.isRequired,
   removeClassy: PropTypes.func.isRequired,
   chngWeek: PropTypes.func.isRequired,
+};
+
+InstructorsSchedule.defaultProps = {
+  registeredUsers: [],
 };
 
 export default InstructorsSchedule;

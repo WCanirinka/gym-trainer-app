@@ -3,8 +3,8 @@ import Navbar from '../components/NavBar/NavBar';
 import { addInstructor, addClass, addUsers } from '../actions';
 
 const mapStateToProps = state => ({
-  instructors: state.instructors,
-  signedUsers: state.signedUsers,
+  instructors: state.instructor,
+  registeredUsers: state.registeredUsers,
 });
 
 const mapDispatchToProps = dispatch => ({

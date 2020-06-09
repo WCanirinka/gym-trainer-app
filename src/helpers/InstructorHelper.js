@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 const getSingleInstructor = (instructors, path) => {
   const querry = window.location.href.split(`${path}/`)[1];
 

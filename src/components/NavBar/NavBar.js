@@ -6,7 +6,7 @@ import { getClasses } from '../../services/classes';
 import { getSignedUsers } from '../../services/user';
 import './NavBar.module.css';
 
-const Navbar = props => {
+const NavBar = props => {
   const {
     instructors, addInst, addClassy, addUsr,
   } = props;
@@ -90,13 +90,13 @@ const Navbar = props => {
   return (
     <nav className="navbar-container">
       <Link to="/" className="navbar-link">Home</Link>
-      <Link to="/gym_instructors" className="navbar-link">Instructors</Link>
+      <Link to="/instructors" className="navbar-link">Instructors</Link>
       <ul>
-        {instructors ? instructors.map(inst => (
-          <Link to={`/instFile/${inst.id}`} key={inst.id} className="navbar-instructors">
+        {instructors.map(inst => (
+          <Link to={`/instFile/${inst.id}`} key={inst.id} className="navbar_inst">
             <li>{inst.name.split(' ')[0]}</li>
           </Link>
-        )) : null}
+        ))}
       </ul>
       <Link to="/userSchedule" className="navbar-link">Your schedule</Link>
       <Link to="/about" className="navbar-link">About us</Link>
@@ -104,11 +104,15 @@ const Navbar = props => {
   );
 };
 
-Navbar.propTypes = {
-  instructors: PropTypes.arrayOf(PropTypes.object).isRequired,
+NavBar.propTypes = {
+  instructors: PropTypes.arrayOf(PropTypes.object),
   addInst: PropTypes.func.isRequired,
   addClassy: PropTypes.func.isRequired,
   addUsr: PropTypes.func.isRequired,
 };
 
-export default Navbar;
+NavBar.defaultProps = {
+  instructors: [],
+};
+
+export default NavBar;

@@ -4,9 +4,9 @@ import InstructorSchedule from '../components/InstructorSchedule/InstructorSched
 
 const mapStateToProps = state => ({
   user: state.user,
-  instructors: state.instructors,
+  instructors: state.instructor,
   classes: state.classes,
-  signedUsers: state.signedUsers,
+  registeredUsers: state.registeredUsers,
   week: state.week,
 });
 

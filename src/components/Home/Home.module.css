@@ -21,10 +21,10 @@
 
 .btn_name {
   position: absolute;
-  color: black;
+  color: rgb(43, 37, 37);
   bottom: 0;
   font-size: 3rem;
-  background-color: rgba(256,256,256,0.5);
+  background-color: rgba(0, 0, 255, 0.5);
   left: 1.5rem;
   padding: 0 1rem;
   border-radius: 10px;

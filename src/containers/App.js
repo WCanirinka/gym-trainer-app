@@ -4,7 +4,7 @@ import App from '../components/App/App';
 
 const mapStateToProps = state => ({
   user: state.user,
-  instructors: state.instructors,
+  instructors: state.instructor,
   week: state.week,
 });
 

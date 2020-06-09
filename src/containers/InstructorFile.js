@@ -3,7 +3,7 @@ import { changeWeek } from '../actions';
 import InstructorFile from '../components/InstructorFile/InstructorFile';
 
 const mapStateToProps = state => ({
-  instructors: state.instructors,
+  instructors: state.instructor,
 });
 
 const mapDispatchToProps = dispatch => ({

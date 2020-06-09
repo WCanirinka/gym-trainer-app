@@ -8,7 +8,7 @@ import styles from './Login.module.css';
 
 const Login = props => {
   const {
-    user, signedUser, logIn, addUsr,
+    user, registeredUsers, logIn, addUsr,
   } = props;
   const [email, setEmail] = useState();
   const [pass, setPass] = useState();
@@ -49,7 +49,7 @@ const Login = props => {
     });
     localStorage.setItem('localUser', token);
 
-    const tempUser = signedUser.filter(usr => usr.id === response.id);
+    const tempUser = registeredUsers.filter(usr => usr.id === response.id);
     if (tempUser.length === 0) addUsr({ id: response.id, name: response.name });
 
     return (
@@ -84,9 +84,13 @@ Login.propTypes = {
   user: PropTypes.shape({
     logged: PropTypes.bool,
   }).isRequired,
-  signedUser: PropTypes.arrayOf(PropTypes.object).isRequired,
+  registeredUsers: PropTypes.arrayOf(PropTypes.object),
   logIn: PropTypes.func.isRequired,
   addUsr: PropTypes.func.isRequired,
+};
+
+Login.defaultProps = {
+  registeredUsers: [],
 };
 
 export default Login;

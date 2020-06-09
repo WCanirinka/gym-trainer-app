@@ -10,7 +10,7 @@ const Home = props => {
   const logged = [];
   if (user.logged) {
     logged.push(['/account', 'Account']);
-    logged.push(['/how-to-schedule', 'Schedule a class']);
+    logged.push(['/home', 'Schedule a class']);
   } else {
     logged.push(['/login', 'Login']);
     logged.push(['/signup', 'Signup']);

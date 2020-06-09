@@ -13,7 +13,7 @@ label {
 }
 
 .btn-primary {
-  background-color: rgba(5,44,111,.95);
+  background-color: rgba(0, 0, 255, 0.5);
   font-size: 2rem;
   height: 4rem;
 }

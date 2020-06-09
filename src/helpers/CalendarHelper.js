@@ -101,7 +101,11 @@ CreateCells.propTypes = {
   date: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   classes: PropTypes.arrayOf(PropTypes.object).isRequired,
-  registeredUsers: PropTypes.arrayOf(PropTypes.object).isRequired,
+  registeredUsers: PropTypes.arrayOf(PropTypes.object),
+};
+
+CreateCells.defaultProps = {
+  registeredUsers: [],
 };
 
 const CreateRows = props => {
@@ -109,25 +113,25 @@ const CreateRows = props => {
     user, date, week, clickHandler, classes, registeredUsers,
   } = props;
 
-  const tableCells = () => {
-    const tc = [<th key={date}>{moment(date).format('LT')}</th>];
+  const calCells = () => {
+    const cal = [<th key={date}>{moment(date).format('LT')}</th>];
 
     for (let i = 0; i < 5; i += 1) {
-      tc.push(<CreateCells
+      cal.push(<CreateCells
         user={user}
         date={moment(date).add(getDay(i, week), 'days').format()}
         onClick={(dt, id, cancel) => clickHandler(dt, id, cancel)}
         classes={classes}
-        signedUsers={registeredUsers}
+        registeredUsers={registeredUsers}
         key={moment(date).add(getDay(i, week), 'days').format()}
       />);
     }
-    return tc;
+    return cal;
   };
 
   return (
     <tr className="table-rows">
-      {tableCells()}
+      {calCells()}
     </tr>
   );
 };

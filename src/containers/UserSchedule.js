@@ -4,7 +4,7 @@ import UserSchedule from '../components/UserSchedule/UserSchedule';
 
 const mapStateToProps = state => ({
   user: state.user,
-  instructors: state.instructors,
+  instructors: state.instructor,
   classes: state.classes,
   week: state.week,
 });

@@ -76,7 +76,7 @@ const UserSchedule = props => {
               className="home-buttons home-signup-button"
               onClick={() => chngWeek(-1)}
             >
-              <img src="/contents/prev.png" alt="Signup" className="table-liks-images" />
+              <img src="/contents/prev.png" alt="Signup" className="table-link-images" />
               <p>Previous Week</p>
             </button>
           </Link>
@@ -86,7 +86,7 @@ const UserSchedule = props => {
               className="home-buttons home-signup-button"
               onClick={() => chngWeek(1)}
             >
-              <img src="/contents/next.png" alt="Signup" className="table-liks-images" />
+              <img src="/contents/next.png" alt="Signup" className="table-link-images" />
               <p>Next Week</p>
             </button>
           </Link>
