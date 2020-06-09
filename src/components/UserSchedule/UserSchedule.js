@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { CreateUserRows, getDay } from '../../helpers/CalendarHelper';
 import { deleteClass } from '../../services/classes';
-// import './styles/Tables.css';
+import '../InstructorSchedule/InstructorSchedule.module.css';
 
 const UserSchedule = props => {
   const {

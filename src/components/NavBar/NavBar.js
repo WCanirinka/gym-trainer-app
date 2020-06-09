@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { getInstructors } from '../../services/instructor';
 import { getClasses } from '../../services/classes';
 import { getSignedUsers } from '../../services/user';
-// import './styles/Navbar.css';
+import './NavBar.module.css';
 
 const Navbar = props => {
   const {
@@ -90,7 +90,7 @@ const Navbar = props => {
   return (
     <nav className="navbar-container">
       <Link to="/" className="navbar-link">Home</Link>
-      <Link to="/instructors" className="navbar-link">Instructors</Link>
+      <Link to="/gym_instructors" className="navbar-link">Instructors</Link>
       <ul>
         {instructors ? instructors.map(inst => (
           <Link to={`/instFile/${inst.id}`} key={inst.id} className="navbar-instructors">
@@ -98,7 +98,7 @@ const Navbar = props => {
           </Link>
         )) : null}
       </ul>
-      <Link to="/userSchedule" className="navbar-link">Your schedulle</Link>
+      <Link to="/userSchedule" className="navbar-link">Your schedule</Link>
       <Link to="/about" className="navbar-link">About us</Link>
     </nav>
   );

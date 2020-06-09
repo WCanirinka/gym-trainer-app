@@ -55,8 +55,8 @@ const UserAccount = props => {
         <h2 className="mb-5">{email}</h2>
       </div>
       <div className="signup">
-        <h2>Fill the form bellow to change your data</h2>
-        <h5>Leave each field that you do not want to change blank</h5>
+        <h2>Input data</h2>
+        <h5>Default fields can remain unchanged</h5>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">
             Name:

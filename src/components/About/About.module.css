@@ -26,27 +26,27 @@
 }
 
 .github-icon {
-  background-image: url('/contents/github.png');
+  background-image: url('/content/github.png');
 }
 
 .github-icon:hover {
-  background-image: url('/contents/githubHover.png');
+  background-image: url('/content/githubHover.png');
 }
 
 .twitter-icon {
-  background-image: url('/contents/twitter.png');
+  background-image: url('/content/twitter.png');
 }
 
 .twitter-icon:hover {
-  background-image: url('/contents/twitterHover.png');
+  background-image: url('/content/twitterHover.png');
 }
 
 .linkedin-icon {
-  background-image: url('/contents/linkedin.png');
+  background-image: url('/content/linkedin.png');
 }
 
 .linkedin-icon:hover {
-  background-image: url('/contents/linkedinHover.png');
+  background-image: url('/content/linkedinHover.png');
 }
 
 .bold {

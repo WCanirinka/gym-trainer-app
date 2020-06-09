@@ -11,15 +11,15 @@ button {
   margin: 2rem auto; 
 }
 
-.fetch-image {
+.fetch_gif {
   width: 60rem;
 }
 
-.table-title {
+.cal_title {
   margin-top: 2rem;
 }
 
-.table-container {
+.cal_container {
   display: flex;
   align-items: center;
 }
@@ -42,15 +42,15 @@ button {
   font-size: 1.4rem;
 }
 
-.next-prev {
+.next_prev {
   width: 15%;
 }
 
-.width-bigger-900 {
+.width_big {
   display: inline-block;
 }
 
-.width-smaller-900 {
+.width_small {
   display: none;
 }
 
@@ -59,11 +59,11 @@ button {
     flex-flow: column;
   }
 
-  .width-bigger-900 {
+  .width_big {
     display: none;
   }
 
-  .width-smaller-900 {
+  .width_small {
     display: block;
     float: left;
   }

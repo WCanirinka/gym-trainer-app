@@ -17,7 +17,7 @@ const Header = props => {
         <div className="header-logo-name">
           <Link to="/">
             <button type="button" className="header-button">
-              <img src="/contents/logo.png" alt="Home" className="header-button-img" />
+              <img src="/content/logo.png" alt="Home" className="header-btn-img" />
             </button>
           </Link>
           <h1>Strong Gym Fitness</h1>
@@ -47,7 +47,7 @@ const Header = props => {
       <div className="header-logo-name">
         <Link to="/">
           <button type="button" className="header-button">
-            <img src="/contents/logo.png" alt="Home" className="header-button-img" />
+            <img src="/content/logo.png" alt="Home" className="header-btn-img" />
           </button>
         </Link>
         <h1>Strong Gym Fitness</h1>

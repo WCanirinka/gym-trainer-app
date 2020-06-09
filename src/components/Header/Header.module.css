@@ -19,12 +19,14 @@ button:hover {
 }
 
 .header-button {
+  width: 40px;
+  height: 40px;
   background: none;
   border: none;
   margin-left: 0.5rem;
 }
 
-.header-button-img {
+img {
   height: 4rem;
   width: 4rem;
 }
