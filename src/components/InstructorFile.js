@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, useParams } from 'react-router-dom';
-import getSingleInst from '../../helpers/InstructorHelper';
-import styles from './InstructorFile.module.css';
+import getSingleInst from '../helpers/InstructorHelper';
+import styles from './styles/InstructorFile.module.css';
 
 const InstructorFile = props => {
   const { instructors, chngWeek } = props;

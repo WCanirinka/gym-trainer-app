@@ -2,12 +2,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
-import '@material-ui/core';
-import styles from './About.module.css';
+import styles from './styles/About.module.css';
 
 const About = () => (
   <div className={styles.container}>
-    <h1 m={5}>About</h1>
+    <h1 classnames="m-5">About</h1>
     <p className="about-text">
       This is a project to demonstrate mastery as a Final Project for
       Microverse&apos;s full-stack program.

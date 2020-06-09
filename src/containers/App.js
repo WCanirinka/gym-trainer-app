@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { updateUser } from '../actions';
-import App from '../components/App/App';
+import App from '../components/App';
 
 const mapStateToProps = state => ({
   user: state.user,

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { addClass, removeClass, changeWeek } from '../actions';
-import InstructorSchedule from '../components/InstructorSchedule/InstructorSchedule';
+import InstructorSchedule from '../components/InstructorSchedule';
 
 const mapStateToProps = state => ({
   user: state.user,

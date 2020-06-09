@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Instructor from '../Instructor/Instructor';
-import './InstructorList.module.css';
+import Instructor from './Instructor';
+import './styles/InstructorList.module.css';
 
 const InstructorList = props => {
   const { instructors } = props;

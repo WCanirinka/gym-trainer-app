@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Redirect } from 'react-router';
 import PropTypes from 'prop-types';
 import { ToastContainer, toast } from 'react-toastify';
-import { userLogin } from '../../services/user';
+import { userLogin } from '../services/user';
 import 'react-toastify/dist/ReactToastify.css';
-import styles from './Login.module.css';
+import styles from './styles/Login.module.css';
 
 const Login = props => {
   const {

@@ -6,19 +6,19 @@ import {
 } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
-import Header from '../../containers/Header';
-import Navbar from '../../containers/NavBar';
-import Home from '../Home/Home';
-import InstructorList from '../InstructorList/InstructorList';
-import InstructorFile from '../../containers/InstructorFile';
-import InstructorSchedule from '../../containers/InstructorSchedule';
-import UserSchedule from '../../containers/UserSchedule';
-import UserAccount from '../UserAccount/UserAccount';
-import Login from '../../containers/Login';
-import Signup from '../Signup/Signup';
-import About from '../About/About';
-import NoMatch from '../NoMatch/NoMatch';
-import styles from './App.module.css';
+import Header from '../containers/Header';
+import Navbar from '../containers/NavBar';
+import Home from './Home';
+import InstructorList from './InstructorList';
+import InstructorFile from '../containers/InstructorFile';
+import InstructorSchedule from '../containers/InstructorSchedule';
+import UserSchedule from '../containers/UserSchedule';
+import UserAccount from './UserAccount';
+import Login from '../containers/Login';
+import Signup from './Signup';
+import About from './About';
+import NoMatch from './NoMatch';
+import styles from './styles/App.module.css';
 
 toast.configure();
 

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { getInstructors } from '../../services/instructor';
-import { getClasses } from '../../services/classes';
-import { getSignedUsers } from '../../services/user';
-import './NavBar.module.css';
+import { getInstructors } from '../services/instructor';
+import { getClasses } from '../services/classes';
+import { getSignedUsers } from '../services/user';
+import './styles/NavBar.module.css';
 
 const NavBar = props => {
   const {

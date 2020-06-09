@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import cx from 'classnames';
-import getSingleInst from '../../helpers/InstructorHelper';
-import { CreateRows, getDay } from '../../helpers/CalendarHelper';
-import { createClass, deleteClass } from '../../services/classes';
-import styles from './InstructorSchedule.module.css';
+import getSingleInst from '../helpers/InstructorHelper';
+import { CreateRows, getDay } from '../helpers/CalendarHelper';
+import { createClass, deleteClass } from '../services/classes';
+import styles from './styles/InstructorSchedule.module.css';
 
 const InstructorsSchedule = props => {
   const {

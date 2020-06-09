@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import './Header.module.css';
+import './styles/Header.module.css';
 
 const Header = props => {
   const { user, logOut } = props;

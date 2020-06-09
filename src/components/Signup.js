@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
-import { createUser } from '../../services/user';
-// import './styles/Forms.css';
+import { createUser } from '../services/user';
+import './styles/Signup.module.css';
 
 const Signup = props => {
   const { user } = props;

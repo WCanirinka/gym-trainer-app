@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import cx from 'classnames';
-import styles from './Home.module.css';
+import styles from './styles/Home.module.css';
 
 const Home = props => {
   const { user } = props;
@@ -18,7 +18,7 @@ const Home = props => {
 
   return (
     <div className={styles.home}>
-      <h1 className={styles.home_title}>Welcome to Strong Gym</h1>
+      <h1 className={styles.home_title}>Welcome to Strong Gym Fitness</h1>
       <img src="./content/bg-image.jpg" alt="Gym" className={styles.gym_image} />
       <h2 className={styles.home_title}>
         &quot;Come and experience a life changing practice.
