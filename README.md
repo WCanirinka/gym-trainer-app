@@ -2,7 +2,7 @@
 
 # Final Capstone Project for Microverse Program: Book an Appointment
 
-<h1 align="center"><img src="https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/welcome.png"></h1>
+<h1 align="center"><img src="https://raw.githubusercontent.com/WCanirinka/gym-trainer-app/feature-app/public/content/homepage.png"></h1>
 
 This is Microvers's Final Project. 
 In this repository, I build the front end for a Gym appointment web app.
