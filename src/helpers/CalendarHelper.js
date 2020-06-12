@@ -30,7 +30,7 @@ const CreateCells = props => {
   const {
     user, date, onClick, classes, registeredUsers,
   } = props;
-  const classy = classes.filter(cls => moment(cls.classTime).format() === moment(date).add(2, 'hours').format());
+  const classy = classes.filter(cls => moment(cls.classTime).format() === moment(date).format());
 
   if (classy[0]) {
     const schUser = registeredUsers.filter(usr => usr.id === classy[0].user);
