@@ -1,3 +1,4 @@
+/* eslint-disable import/first */
 import React, { useState } from 'react';
 import { Redirect } from 'react-router';
 import PropTypes from 'prop-types';
