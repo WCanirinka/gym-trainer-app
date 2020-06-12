@@ -61,14 +61,14 @@ const InstructorsSchedule = props => {
     return (
       <div>
         <h1 className="my-5">Fetching data. Please wait.</h1>
-        <img src="/content/loading.gif" alt="Fetching" className="fetch_gif" />
+        <img src="/content/loading.jpg" alt="Fetching" className="fetch_gif" />
       </div>
     );
   }
 
   return (
     <div>
-      <h1 className="cal_title">{`${instructor.name.split(' ')[0]}'s schedule`}</h1>
+      <h1 className="cal_title">{`${instructor.name}'s schedule`}</h1>
       <div className="cal_container">
         <Link to={`/instSchedule/${instructor.id}`} className="next_prev width_big">
           <button
@@ -76,7 +76,7 @@ const InstructorsSchedule = props => {
             className="home-buttons home-signup-button table-links-buttons"
             onClick={() => chngWeek(-1)}
           >
-            <img src="/contents/previous.png" alt="Signup" className="table-link-images" />
+            <img src="/content/previous.png" alt="Signup" className="table-link-images" />
             <p>Previous Week</p>
           </button>
         </Link>

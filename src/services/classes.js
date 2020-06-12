@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-const url = 'https://trainers-appointment-api.herokuapp.com/gym_classes';
+const url = 'https://trainers-appointment-api.herokuapp.com/gym_classes/';
 
 const createClass = async props => {
   const {
     instuctorID, userID, classTime, status,
   } = props;
 
-  const params = `gym_instructors_id=${instuctorID}&users_id=${userID}&classTime=${classTime}&status=${status}`;
+  const params = `gym_instructor_id=${instuctorID}&user_id=${userID}&classTime=${classTime}&status=${status}`;
 
   const response = await axios.post(`${url}?${params}`);
   return response.data;

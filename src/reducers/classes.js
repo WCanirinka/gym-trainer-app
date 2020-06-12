@@ -5,7 +5,7 @@ const classReducer = (state = [], action) => {
         {
           id: action.classy.id,
           classTime: action.classy.classTime,
-          instructor: action.classy.instructor_id,
+          instructor: action.classy.gym_instructor_id,
           user: action.classy.user_id,
           status: action.classy.status,
         }]);

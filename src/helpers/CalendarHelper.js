@@ -30,7 +30,7 @@ const CreateCells = props => {
   const {
     user, date, onClick, classes, registeredUsers,
   } = props;
-  const classy = classes.filter(cls => moment(cls.classTime).format() === moment(date).format());
+  const classy = classes.filter(cls => moment(cls.classTime).format() === moment(date).add(2, 'hours').format());
 
   if (classy[0]) {
     const schUser = registeredUsers.filter(usr => usr.id === classy[0].user);
@@ -161,7 +161,7 @@ const CreateUserCells = props => {
     return (
       <th>
         <div className="cells">
-          {instructor[0].name.split(' ')[0]}
+          {instructor[0].name}
           <button
             type="button"
             onClick={() => onClick(classy[0].id)}

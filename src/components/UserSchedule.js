@@ -103,10 +103,14 @@ UserSchedule.propTypes = {
     name: PropTypes.string,
   }).isRequired,
   instructors: PropTypes.arrayOf(PropTypes.object).isRequired,
-  classes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  classes: PropTypes.arrayOf(PropTypes.object),
   week: PropTypes.number.isRequired,
   removeClassy: PropTypes.func.isRequired,
   chngWeek: PropTypes.func.isRequired,
+};
+
+UserSchedule.defaultProps = {
+  classes: [],
 };
 
 export default UserSchedule;
