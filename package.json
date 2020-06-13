@@ -22,7 +22,9 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-toastify": "^6.0.5",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "stylelint": "^13.6.0",
+    "stylelint-scss": "^3.17.2"
   },
   "scripts": {
     "start": "react-scripts start",

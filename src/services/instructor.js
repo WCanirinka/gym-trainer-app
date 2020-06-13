@@ -1,4 +1,3 @@
-
 import axios from 'axios';
 
 const url = 'https://trainers-appointment-api.herokuapp.com/gym_instructors/';
