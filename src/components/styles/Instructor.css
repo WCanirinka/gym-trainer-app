@@ -1,0 +1,14 @@
+.inst_container {
+  height: 30rem;
+  margin: 1rem 3rem 5rem;
+}
+
+.inst_btn {
+  height: 100%;
+  background: none;
+  border: none;
+}
+
+.inst_img {
+  height: 100%;
+}

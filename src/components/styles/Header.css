@@ -1,0 +1,55 @@
+button:hover {
+  cursor: pointer;
+}
+
+.header {
+  background-color: rgba(124, 144, 179, 0.329);
+  color: rgb(49, 64, 105);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-logo-name {
+  display: flex;
+  align-items: center;
+}
+
+.header-button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  margin-left: 0.5rem;
+}
+
+img {
+  height: 3rem;
+  width: 2.5rem;
+  margin-left: -10px;
+  margin-top: -5px;
+}
+
+.account-buttons-container {
+  display: flex;
+}
+
+.account-button {
+  border-radius: 5px;
+  margin: 0.5rem;
+  height: 3rem;
+  min-width: 5rem;
+  width: fit-content;
+  background-color: rgb(43, 37, 37);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+}
+
+.account-button:hover {
+  transform: scale(1.1);
+}

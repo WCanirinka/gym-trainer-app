@@ -1,0 +1,10 @@
+.instructor_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inst-container {
+  height: 10rem;
+  margin: 1rem 3rem 5rem;
+}

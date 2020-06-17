@@ -1,0 +1,74 @@
+th {
+  vertical-align: none;
+}
+
+button {
+  width: fit-content;
+}
+
+.table {
+  width: auto;
+  margin: 2rem auto;
+}
+
+.fetch_gif {
+  width: 60rem;
+}
+
+.cal_title {
+  margin-top: 2rem;
+}
+
+.cal_container {
+  display: flex;
+  align-items: center;
+}
+
+.table-head {
+  font-size: 1.8rem;
+}
+
+.table-link-buttons {
+  font-size: 1.8rem;
+}
+
+.table-link-images {
+  width: 6rem;
+}
+
+.cells {
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+}
+
+.next_prev {
+  width: 15%;
+}
+
+.width_big {
+  display: inline-block;
+}
+
+.width_small {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .table-container {
+    flex-flow: column;
+  }
+
+  .width_big {
+    display: none;
+  }
+
+  .width_small {
+    display: block;
+    float: left;
+  }
+
+  .np-right {
+    float: right;
+  }
+}
