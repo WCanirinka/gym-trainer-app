@@ -1,110 +1,68 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/29dde66e-1805-4050-b689-0f9836b1a9fe/deploy-status)](https://app.netlify.com/sites/eloquent-goodall-b5190e/deploys)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Final Capstone Project for Microverse Program: Book an Appointment
+## Available Scripts
 
-<h1 align="center"><img src="https://raw.githubusercontent.com/WCanirinka/gym-trainer-app/feature-app/public/content/homepage.png"></h1>
+In the project directory, you can run:
 
-This is Microvers's Final Project. 
-In this repository, I build the front end for a Gym appointment web app.
+### `yarn start`
 
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Table of contents
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-- [Final Capstone Project for Microverse Program: Book an Appointment](#final-capstone-project-for-microverse-program-book-an-appointment)
-  - [Table of contents](#table-of-contents)
-  - [About](#about)
-  - [Strong Gym Fitness](#strong-gym-fitness)
-    - [How to open](#how-to-open)
-    - [Technologies used](#technologies-used)
-  - [Future work](future-work)
-  - [Contact](#contact)
-  - [Acknowledgments](#acknowledgments)
+### `yarn test`
 
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## About 
+### `yarn build`
 
-The objective of the project is to create an application for booking an appointment. The backend is handled by a RESTful API built with Ruby on Rails. You can check the backend with a link provided below.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The project's assignment can be seen [here][assignment].
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-The back-end repository can be found [here][back-end].
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Link to a live version [here][live-version].
+### `yarn eject`
 
-Repository: https://github.com/WCanirinka/gym-trainer-app
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Strong Gym Fitness
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-For this project, I created Strong Gym Fitness web app. Lately gym has become a sanctuary for many since many are becoming aware of health issues that arises by not taking care of our bodies
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-In this web app, you can schedule a class with the instructor of your choice depending on which training you want. To schedule a class just follow the steps:
+## Learn More
 
-* Signup in the [Signup page][signup]. You will be redirected to the [Login page][login], so login.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-* Choose a trainer on the [Instructors page][instructors].
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-* Click in the button to be redirected to the instructor's schedule page
+### Code Splitting
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### How to open
+### Analyzing the Bundle Size
 
-You can open the catalog online clicking [here][live-version] or locally following these steps:
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-* Click on the green button "Clone or Download"
-* Click on Download ZIP
-* Extract the project
-* In your terminal, navigate to the game's folder
-* Run *npm install*
-* Run *npm start*
+### Making a Progressive Web App
 
-A tab will be opened in the browser.
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
+### Advanced Configuration
 
-### Technologies used
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-To create this project I used:
+### Deployment
 
-* JavaScript
-* A bit of HTML and CSS
-* eslint
-* React
-* Redux
-* PropTypes
-* Github
-* Netlify
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
+### `yarn build` fails to minify
 
-## Future work
-
-- You can fork the project and try to improve it
-- Try to use React Native to built it for mobile
-
-
-
-## Contact
-
-Author: Wilfried Canirinka
-
-Follow me on [Twitter][wil-twitter],  visit my [Github portfolio][wil-github], my [Linkedin][wil-linkedin].
-
-
-## Acknowledgments
-
-[Microverse][mcvs]
-
-I have no business rights about the characters used in this API. This is only for learning purposes.
-
-
-<!-- Links -->
-[assignment]: https://www.notion.so/Final-Capstone-Project-Book-an-Appointment-41ded2ee99ff4fe4becf91acb332ca26
-[live-version]: https://gym-trainer-app.netlify.app/
-[back-end]: https://github.com/WCanirinka/trainers-api
-[mcvs]: https://www.microverse.org/
-[wil-github]: https://github.com/WCanirinka
-[wil-twitter]: https://twitter.com/WCanirinka
-[wil-linkedin]: https://www.linkedin.com/in/wilfried-canirinka/
-
-[sigup]: https://gym-trainer-app.netlify.app/signup
-[login]: https://gym-trainer-app.netlify.app/login
-[instructors]: https://gym-trainer-app.netlify.app/instructors
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
